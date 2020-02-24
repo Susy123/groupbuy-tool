@@ -41,7 +41,7 @@ export default {
   data() {
     return {
       // eslint-disable-next-line global-require
-      imgSrc: require('../data/img/product1.jpeg'),
+      imgSrc: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582538005359&di=0c495488afac6c5f71dc6a9451b0be69&imgtype=0&src=http%3A%2F%2Fimg3.tbcdn.cn%2Ftfscom%2Fi4%2F1910146537%2FTB2KfkifR8lpuFjSspaXXXJKpXa_%2521%25211910146537.jpg',//require('../data/img/product1.jpeg'),
       isBuy: false,
       total: 8,
       needNum: 10,
@@ -114,6 +114,10 @@ export default {
                 word-wrap: break-word;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 2
+            }
+            .time{
+                font-size: 13px;
+                color: gray;
             }
             .price{
                 color: #FA5151;

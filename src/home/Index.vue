@@ -1,18 +1,15 @@
 <template>
   <KView class="page home js_show">
        <KView class="page__address">
-           <KFlex>
-               <KFlexItem>
-                   <KInput label="我在：" v-model="myAddress" class="address_input"></KInput>
-               </KFlexItem>
-               <KFlexItem>
-                   <KButton type="primary" class="address_btn">更换位置</KButton>
-               </KFlexItem>
-           </KFlex>
+           我在：
+<!--           <img src="../assets/location.png">-->
+           <span class="iconfont icon-location"></span>
+           {{myAddress}}
+           <KButton type="primary" class="address_btn">更换位置</KButton>
         </KView>
       <KView>
           <KView>
-              <Product @click="clickProduct"></Product>
+              <Product></Product>
               <Product></Product>
               <Product></Product>
           </KView>
@@ -41,9 +38,6 @@ export default Vue.extend({
     getUserInfo(e) {
       console.log(e)
     },
-    clickProduct() {
-      alert('router')
-    }
   }
 })
 </script>
@@ -54,13 +48,25 @@ export default Vue.extend({
         background: white;
         border-bottom: 1px solid #EDEDED;
         z-index: 500;
-        /*padding: 20px;*/
+        padding: 20px 20px 10px;
+        img {
+            vertical-align: text-bottom;
+            width: 20px;
+            height: 20px;
+        }
+        .inline-block{
+            display: inline-block;
+        }
         .address_input{
             /*display: inline-block;*/
         }
         .address_btn{
-            display: inline-block;
-            width: 150px;
+            margin-left: 20px;
+            /*display: inline-block;*/
+            width: 120px;
+            position: fixed;
+            top: 10px;
+            right: 20px;
         }
         .weui-label {
             width: 50px;

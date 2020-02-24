@@ -5,14 +5,25 @@
       <KFlex>
         <KFlexItem><KView class="app__nabbaritem"
                           :class="{ active: activeTab==1 }"
-                          @click="clickNav(1)">首页</KView></KFlexItem>
-        <KFlexItem><KView class="app__nabbaritem"
-                          :class="{ active: activeTab==2 }"
-                          @click="clickNav(2)">新建团购</KView></KFlexItem>
+                          @click="clickNav(1)">
+<!--          <img :src="homeSrc">-->
+          <span class="iconfont icon-home"></span>
+          首页
+        </KView></KFlexItem>
+<!--        <KFlexItem><KView class="app__nabbaritem"-->
+<!--                          :class="{ active: activeTab==2 }"-->
+<!--                          @click="clickNav(2)">-->
+<!--          <img src="./assets/round_add_fill.png">-->
+<!--        </KView></KFlexItem>-->
         <KFlexItem><KView class="app__nabbaritem"
                           :class="{ active: activeTab==3 }"
-                          @click="clickNav(3)">我的信息</KView></KFlexItem>
+                          @click="clickNav(3)">
+<!--          <img :src="mySrc">-->
+          <span class="iconfont icon-people"></span>
+          我的</KView></KFlexItem>
       </KFlex>
+<!--      <img class="botton-add" src="./assets/round_add_fill.png" @click="clickNav(2)">-->
+      <span class="iconfont icon-roundaddfill" @click="clickNav(2)"></span>
     </div>
   </div>
 </template>
@@ -24,7 +35,7 @@ export default Vue.extend({
   name: 'App',
   data() {
     return {
-      activeTab: 1
+      activeTab: 1,
     }
   },
   methods: {
@@ -39,6 +50,16 @@ export default Vue.extend({
       if (tab === 3) {
         this.$router.push('/my')
       }
+    }
+  },
+  computed: {
+    homeSrc() {
+      // eslint-disable-next-line global-require
+      return this.activeTab === 1 ? require('./assets/home_active.png') : require('./assets/home.png')
+    },
+    mySrc() {
+      // eslint-disable-next-line global-require
+      return this.activeTab === 3 ? require('./assets/people_active.png') : require('./assets/people.png')
     }
   }
 })
@@ -64,6 +85,21 @@ export default Vue.extend({
     }
     .active{
       color: #07C160;
+    }
+    img{
+      vertical-align: text-bottom;
+      width: 25px;
+      height: 25px;
+    }
+    .botton-add, .iconfont.icon-roundaddfill{
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      width: 60px;
+      height: 60px;
+      margin-left: -30px;
+      font-size: 60px;
+      color: #FA5151;
     }
   }
 </style>

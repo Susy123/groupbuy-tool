@@ -1,0 +1,86 @@
+{
+  "id": "1653420",
+  "name": "groupbuy-tool",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "868597",
+      "name": "icon-注册头像",
+      "font_class": "iconzhucetouxiang",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "29950",
+      "name": "time",
+      "font_class": "time",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "30433",
+      "name": "deliver",
+      "font_class": "deliver",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "36017",
+      "name": "friend_add",
+      "font_class": "friendadd",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "36020",
+      "name": "goods",
+      "font_class": "goods",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "30418",
+      "name": "like",
+      "font_class": "like",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
+      "icon_id": "33516",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "29936",
+      "name": "location",
+      "font_class": "location",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "38744",
+      "name": "round_add_fill",
+      "font_class": "roundaddfill",
+      "unicode": "e6d8",
+      "unicode_decimal": 59096
+    },
+    {
+      "icon_id": "158874",
+      "name": "people",
+      "font_class": "people",
+      "unicode": "e736",
+      "unicode_decimal": 59190
+    },
+    {
+      "icon_id": "1907965",
+      "name": "头像 女孩",
+      "font_class": "icon-test",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    }
+  ]
+}
