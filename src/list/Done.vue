@@ -1,5 +1,6 @@
 <template>
     <KView class="list page js_show">
+        <Back></Back>
         <h1 class="list-title">已结束的团购</h1>
         <Product></Product>
         <Product></Product>
@@ -10,10 +11,11 @@
 
 <script>
 import Product from '../components/Product.vue'
+import Back from '../components/Back.vue'
 
 export default {
   name: 'Done',
-  components: { Product },
+  components: { Product, Back },
 }
 </script>
 

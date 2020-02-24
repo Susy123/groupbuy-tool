@@ -17,6 +17,9 @@
         <KView class="other">
             <KView>附近其他团购：</KView>
         </KView>
+      <KView>
+          <Product></Product>
+      </KView>
       <KView class="placeholder"></KView>
   </KView>
 </template>
