@@ -5,10 +5,10 @@
         </KView>
         <KView class="right">
             <KView class="title">{{productTitle}}</KView>
-            <KView class="time">截止时间：2020-02-25 18:00:00</KView>
-            <KView class="time">提货时间：2020-02-26 14:00:00</KView>
+            <KView class="time">截止时间：{{deadline}}</KView>
+            <KView class="time">提货时间：{{takeTime}}</KView>
             <KFlex>
-                <KFlexItem><KView class="total">已团：{{total}}</KView></KFlexItem>
+                <KFlexItem><KView class="buyNum">已团：{{buyNum}}</KView></KFlexItem>
                 <KFlexItem><KView class="need">需团：{{needNum}}</KView></KFlexItem>
             </KFlex>
             <KFlex>
@@ -43,12 +43,14 @@ export default {
       // eslint-disable-next-line global-require
       imgSrc: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1582538005359&di=0c495488afac6c5f71dc6a9451b0be69&imgtype=0&src=http%3A%2F%2Fimg3.tbcdn.cn%2Ftfscom%2Fi4%2F1910146537%2FTB2KfkifR8lpuFjSspaXXXJKpXa_%2521%25211910146537.jpg',//require('../data/img/product1.jpeg'),
       isBuy: false,
-      total: 8,
+      deadline: '2020-02-25 18:00:00',
+      takeTime: '2020-02-26 14:00:00',
+      buyNum: 8,
       needNum: 10,
       productTitle: '大台农芒果5斤 超级甜超级好吃超级新鲜一定要买！买它买它买它',
       name: '',
       phoneNo: '',
-      count: '1',
+      count: '',
       isShow: false
     }
   },
@@ -57,14 +59,14 @@ export default {
       if (!this.isBuy) {
         this.isShow = true
       } else {
-        this.total = Number(this.total) - Number(this.count)
+        this.buyNum = Number(this.buyNum) - Number(this.count)
         this.isBuy = false
       }
     },
     confirmBuy() {
       // isBuy 为 false -> true
       this.isBuy = !this.isBuy
-      this.total = Number(this.total) + Number(this.count)
+      this.buyNum = Number(this.buyNum) + Number(this.count)
       this.isShow = false
     },
     clickProduct() {
@@ -135,7 +137,7 @@ export default {
                 color: white;
                 background-color: #FA5151;
             }
-            .total{
+            .buyNum{
                 color: #42b983;
             }
             .need{

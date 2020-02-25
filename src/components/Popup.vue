@@ -1,10 +1,15 @@
 <template>
-    <KView class="popup" v-if="isShow">
-        <KView class="popup-mask"></KView>
+    <KView class="popup-buy" v-if="isShow">
+        <KView class="popup-mask" @click="isShow=false"></KView>
         <KView class="popup-content">
-            <KInput label="姓名：" v-model="name"></KInput>
-            <KInput label="电话：" v-model="phoneNo"></KInput>
-            <KInput label="数量：" v-model="count"></KInput>
+            <KInput label="姓名：" v-model="name" placeholder="填写团购人姓名"></KInput>
+            <KInput label="电话：" v-model="phoneNo" placeholder="填写团购人电话"></KInput>
+            <KInput label="数量：" v-model="count" placeholder="填写团购数量"></KInput>
+            <KButtonArea direction="horizontal">
+                <KButton size="mini" type="primary" @click="confirmBuy">确定</KButton>
+                <KButton size="mini" type="warn" @click="isShow=false">取消</KButton>
+            </KButtonArea>
+            <KView class="placeholder"></KView>
         </KView>
     </KView>
 </template>
@@ -14,14 +19,17 @@ export default {
   name: 'Popup',
   data(){
     return {
-
+      name: '',
+      phoneNo: '',
+      count: '',
+      isShow: false
     }
   },
 }
 </script>
 
 <style lang="less">
-    .popup{
+    .popup-buy{
         position: fixed;
         top: 0;
         left: 0;
@@ -44,6 +52,9 @@ export default {
             width: 100%;
             background-color: #fff;
             z-index: 602;
+        }
+        .weui-btn-area {
+            margin: 0px 16px 8px;
         }
     }
 

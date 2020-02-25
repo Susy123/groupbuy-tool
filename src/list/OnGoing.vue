@@ -1,7 +1,6 @@
 <template>
     <KView class="list page js_show">
-        <Back></Back>
-        <h1 class="list-title">正在团购</h1>
+        <Back title="正在团购"></Back>
         <Product></Product>
         <Product></Product>
         <Product></Product>

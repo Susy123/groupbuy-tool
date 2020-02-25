@@ -1,7 +1,6 @@
 <template>
     <KView class="list page js_show">
-        <Back></Back>
-        <h1 class="list-title">我收藏的</h1>
+        <Back title="我的收藏"></Back>
         <Product></Product>
         <Product></Product>
         <Product></Product>

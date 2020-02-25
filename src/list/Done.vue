@@ -1,7 +1,6 @@
 <template>
     <KView class="list page js_show">
-        <Back></Back>
-        <h1 class="list-title">已结束的团购</h1>
+        <Back title="已完成"></Back>
         <Product></Product>
         <Product></Product>
         <Product></Product>

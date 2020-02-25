@@ -6,12 +6,14 @@
         <KInput label="团购标题：" v-model="buyTitle"></KInput>
         <KInput label="团购地点：" v-model="buyAddress"></KInput>
         <KInput label="团购最低数量：" v-model="buyNeedNum"></KInput>
-        <KInput label="产品配图：" disabled="true"></KInput>
+        <KInput label="提货时间：" v-model="takeTime"></KInput>
+        <KInput label="截止时间：" v-model="deadline"></KInput>
+        <KInput label="产品配图：" :disabled="true"></KInput>
         <KView class="">
             <KView class="weui-uploader__input-box add-img"></KView>
             <KView class="clear-both"></KView>
         </KView>
-        <KInput label="团购群二维码：" disabled="true"></KInput>
+        <KInput label="团购群二维码：" :disabled="true"></KInput>
         <KView class="">
             <KView class="weui-uploader__input-box add-img"></KView>
             <KView class="clear-both"></KView>
@@ -31,7 +33,9 @@ export default Vue.extend({
     return {
       buyTitle: '',
       buyAddress: '',
-      buyNeedNum: '1'
+      buyNeedNum: '',
+      takeTime: '',
+      deadline: ''
     }
   },
   methods: {

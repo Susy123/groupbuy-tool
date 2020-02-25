@@ -12,7 +12,7 @@ const Created = () => import('@/list/Created.vue')
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'hash',
   routes: [{
     path: '/(home|index)?',
@@ -52,3 +52,12 @@ export default new Router({
     component: Created,
   }],
 })
+const mainPageList = ['Home', 'New', 'My'];
+router.afterEach((to, from) => {
+  if (mainPageList.indexOf(to.name) < 0) {
+    document.getElementsByClassName('app__navbar')[0].style.display='none'
+  } else {
+    document.getElementsByClassName('app__navbar')[0].style.display=''
+  }
+})
+export default router

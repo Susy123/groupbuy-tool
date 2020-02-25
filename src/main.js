@@ -9,6 +9,10 @@ import './assets/iconfont/iconfont.css'
 
 Vue.config.productionTip = false
 
+Vue.prototype.globalVar = {
+  navbar: true
+}
+
 sync(store, router)
 
 Vue.use(KboneUI)
