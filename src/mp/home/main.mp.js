@@ -13,6 +13,7 @@ import Collect from '../../list/Collect.vue'
 import OnGoing from '../../list/OnGoing.vue'
 import Done from '../../list/Done.vue'
 import Created from '../../list/Created.vue'
+import HeadPage from '../../list/HeadPage.vue'
 
 import '../../assets/iconfont/iconfont.css'
 
@@ -56,6 +57,10 @@ const router = new Router({
     path: '/created',
     name: 'Created',
     component: Created,
+  }, {
+    path: '/head',
+    name: 'HeadPage',
+    component: HeadPage,
   }],
 })
 const mainPageList = ['Home', 'New', 'My'];

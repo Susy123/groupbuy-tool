@@ -28,7 +28,7 @@
                       <KView>
 <!--                          <img src="./history.png">-->
                           <span class="iconfont icon-goods"></span>
-                      </KView><KView>已完成</KView>
+                      </KView><KView>已截单</KView>
                   </KView>
               </KFlexItem>
               <KFlexItem>
@@ -70,7 +70,7 @@
       <KView class="popup" v-if="isShow">
           <KView class="popup-mask" @click="isShow=false"></KView>
           <KView class="popup-content">
-              <KInput label="反馈意见：" v-model="suggestion"></KInput>
+              <KInput label="反馈意见：" v-model="suggestion" clearable></KInput>
               <KButtonArea direction="horizontal">
                   <KButton size="mini" type="primary" @click="submitSuggestion">确定</KButton>
                   <KButton size="mini" type="warn" @click="isShow=false">取消</KButton>

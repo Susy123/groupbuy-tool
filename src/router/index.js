@@ -9,6 +9,7 @@ const Collect = () => import('@/list/Collect.vue')
 const OnGoing = () => import('@/list/OnGoing.vue')
 const Done = () => import('@/list/Done.vue')
 const Created = () => import('@/list/Created.vue')
+const HeadPage = () => import('@/list/HeadPage.vue')
 
 Vue.use(Router)
 
@@ -50,6 +51,10 @@ const router = new Router({
     path: '/created',
     name: 'Created',
     component: Created,
+  }, {
+    path: '/head',
+    name: 'HeadPage',
+    component: HeadPage,
   }],
 })
 const mainPageList = ['Home', 'New', 'My'];

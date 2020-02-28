@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "29937",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "986189",
+      "name": "微信",
+      "font_class": "weixin-copy",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "986191",
+      "name": "朋友圈",
+      "font_class": "pengyouquan-copy",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
+      "icon_id": "13168166",
+      "name": "phone-fill",
+      "font_class": "phone-fill",
+      "unicode": "e732",
+      "unicode_decimal": 59186
+    },
+    {
       "icon_id": "9297179",
       "name": "拼团",
       "font_class": "pintuan",

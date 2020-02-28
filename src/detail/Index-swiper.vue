@@ -1,4 +1,3 @@
-<!--原厂例子，在这里项目中也有问题，只有在它跑的示例上运行正常-->
 <template>
     <KView class="page swiper js_show">
         <KView class="page__hd">
@@ -93,6 +92,7 @@
       }
     }
   }
+
 </script>
 
 <style>
@@ -100,13 +100,14 @@
         display: block;
         height: 150px;
     }
+
     .demo-text-1{
         position: relative;
         align-items: center;
         justify-content: center;
         background-color: #1AAD19;
         color: #FFFFFF;
-        font-size: 36rpx;
+        font-size: 36px;
     }
     .demo-text-1:before{
         content: 'A';
@@ -121,7 +122,7 @@
         justify-content: center;
         background-color: #2782D7;
         color: #FFFFFF;
-        font-size: 36rpx;
+        font-size: 36px;
     }
     .demo-text-2:before{
         content: 'B';
@@ -136,7 +137,7 @@
         justify-content: center;
         background-color: #F1F1F1;
         color: #353535;
-        font-size: 36rpx;
+        font-size: 36px;
     }
     .demo-text-3:before{
         content: 'C';
@@ -145,4 +146,6 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+
 </style>

@@ -1,7 +1,6 @@
 <template>
     <KView class="list page js_show">
-        <Back title="已截单"></Back>
-        <Product></Product>
+        <Back title="柠檬酱w 发起的团购"></Back>
         <Product></Product>
         <Product></Product>
         <KView class="placeholder"></KView>
@@ -13,7 +12,7 @@ import Product from '../components/Product.vue'
 import Back from '../components/Back.vue'
 
 export default {
-  name: 'Done',
+  name: 'HeadPage',
   components: { Product, Back },
 }
 </script>
